@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
+print("")
 busan_19 = pd.read_csv('C:/Users/김유정/대학/2024-2/전통/기말프로젝트/소상공인시장진흥공단_상가업소정보_201906/소상공인시장진흥공단_상가업소정보_201906_01.csv')
 # print(busan_19.상권업종대분류명.unique())
 data_19=busan_19[['상가업소번호','상호명','지점명','상권업종대분류명','시도명']] 
@@ -38,7 +38,6 @@ plt.ylabel('폐업률 (%)', fontsize=12)
 plt.xlabel('업종 대분류', fontsize=12)
 plt.xticks(rotation=45)
 plt.show()
-
 
 
 
